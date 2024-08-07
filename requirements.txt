@@ -1,5 +1,5 @@
 beautifulsoup4==4.12.2
 lxml==4.9.3
 feedgenerator==2.1.0
-django==4.2.11
+django==4.2.15
 python-dateutil==2.9.0
