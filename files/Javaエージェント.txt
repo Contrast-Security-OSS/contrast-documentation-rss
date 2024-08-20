@@ -30,7 +30,7 @@ Vert.x 3.1.0 、4.x
 WebLogic 10、11g、12c、14
 WebSphere* 8.5、9.0
 WebSphere Liberty 22
-WildFly 10、11、14、18、23-27
+WildFly 10、11、14、18、23-32
 * zSeriesおよびAIXの環境ではサポートが限定されます。SPARC SolarisでWebSphereを使用する場合、バージョン8.5.5.11が必須となります。
 ルートカバレッジのサポート：
 GlassFish 4、5、6
@@ -39,7 +39,7 @@ Resin 4.0
 Tomcat 5、6、7、8、9、10
 WebLogic 12、14
 WebSphere 8.5、9.0
-WildFly 10、11、14、18、23-27
+WildFly 10、11、14、18、23-32
 オプティマイザ
 Proguard
 ProguardにあるJavaバイトコードの最適化機能は、Contrastのようなランタイムエージェントが基本前提とする動きに反します。Proguardユーザが、Contrastを利用してアプリケーションを保護する場合は、Proguardの-dontoptimize設定オプションを使用して最適化を行わないようにする必要があります。
@@ -85,6 +85,7 @@ Quarkus RESTEasy
 Seam
 Spring、Spring Boot、Spring AOP
 Spring WebFlux 5および6
+Spring Web Services
 Struts、Struts 2
 Wicket
 XStream、Jackson (JSON/XML)
@@ -97,4 +98,5 @@ Jersey  2.25、2.28、2.36、2.6
 Quarkus RESTeasy 2.15
 Spring Web MVC 4.2、5.3、6.0
 Spring WebFlux 5および6
+Spring Web Services
 Struts 2
