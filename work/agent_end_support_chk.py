@@ -113,19 +113,22 @@ def main():
         today = dt.strptime(env_today, '%Y-%m-%d').replace(hour=0, minute=0, second=0, microsecond=0)
         print('using env.TODAY %s' % today)
     item_dict = {}
-    for title, data_tuple in versions_dict.items():
+    for index, (title, data_tuple) in enumerate(versions_dict.items()):
         rls_date = dt.strptime(data_tuple[0], '%Y%m%d%H%M%S')
         date_end_of_support = rls_date + relativedelta(years=1)
         date_end_of_support = date_end_of_support - datetime.timedelta(days=1)
         date_before_30days = date_end_of_support - datetime.timedelta(days=30)
         #print(title, rls_date, today, date_end_of_support, date_before_30days)
         if today == date_before_30days:
-            item_dict[title] = (data_tuple[1], '%s エージェントのサポート終了から30日前です。' % title, data_tuple[2])
+            item_dict[title] = (data_tuple[1], '%s エージェントのサポート終了から30日前です。' % title, data_tuple[2], index)
         if today == date_end_of_support:
-            item_dict[title] = (data_tuple[1], '%s エージェントのサポート終了日となります。' % title, data_tuple[2])
+            item_dict[title] = (data_tuple[1], '%s エージェントのサポート終了日となります。' % title, data_tuple[2], index)
 
-    for k, v in item_dict.items():
-        feed.add_item(title=k, link=v[0], description=''.join(['<p>{0}</p>'.format(s) for s in v[1].splitlines()]), pubdate=pubdate, unique_id=v[2])
+    now_for_pub = dt.today().replace(second=0, microsecond=0)
+    sorted_keys = sorted(item_dict.keys(), key=lambda x: item_dict[x][3], reverse=True)
+    for k in sorted_keys: # e.g. ['Java 4.12', 'Java 4.12.1']
+        v = item_dict[k]
+        feed.add_item(title=k, link=v[0], description=''.join(['<p>{0}</p>'.format(s) for s in v[1].splitlines()]), pubdate=now_for_pub, unique_id=v[2])
     str_val = feed.writeString('utf-8')
     dom = xml.dom.minidom.parseString(str_val)
     with open('/feeds/end_of_support.xml','w') as fp:
