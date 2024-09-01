@@ -2,7 +2,7 @@ import urllib.request as req
 from bs4 import BeautifulSoup
 import xml.dom.minidom
 from django.utils.feedgenerator import Rss201rev2Feed
-from datetime import datetime
+from datetime import datetime as dt
 import locale
 import re
 import difflib
@@ -35,7 +35,7 @@ def main():
             if elem.parent.name == 'div':
                 pubdate_str = elem.get("data-time-modified") # November 6, 2023
                 if pubdate_str:
-                    pubdate = datetime.strptime(pubdate_str, '%B %d, %Y')
+                    pubdate = dt.strptime(pubdate_str, '%B %d, %Y')
                 continue
             id_str = elem.get("id")
             id_hash = hashlib.md5(id_str.encode()).hexdigest()
@@ -66,10 +66,9 @@ def main():
         except IndexError:
             continue
 
-    if pubdate is None:
-        pubdate = datetime.date.today()
+    now_for_pub = dt.today().replace(second=0, microsecond=0)
     for k, v in item_dict.items():
-        feed.add_item(title=k, link=v[0], description=''.join(['<p>{0}</p>'.format(s) for s in v[1].splitlines()]), pubdate=pubdate, unique_id=v[2])
+        feed.add_item(title=k, link=v[0], description=''.join(['<p>{0}</p>'.format(s) for s in v[1].splitlines()]), pubdate=now_for_pub, unique_id=v[2])
 
     if len(item_dict) > 0:
         str_val = feed.writeString('utf-8')
