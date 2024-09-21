@@ -15,7 +15,7 @@ Contrastは、バグフィックスおよび セキュリティステータス�
 
 アプリケーションフレームワーク
 Aiohttp： 3.7 - 3.9
-Bottle： 0.12
+Bottle： 0.13
 Django： 3.2 - 5.0
 Django Rest Framework： 3.12 - 3.15
 Falcon： 3.0 - 3.1
