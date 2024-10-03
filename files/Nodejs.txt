@@ -14,10 +14,12 @@ Node.js LTSバージョンは、JavaScript ECMAScript5と6の機能をサポー�
 TypeScriptがサポートされるのは、エージェントがアプリケーションのコンパイル済みエントリポイントを指すように設定されている場合のみです。
 システム
 Node.js LTSバージョン16、18、20
+、22
 プロセッサのサポート - Apple M1/M2、Intel/AMD(AMD64)
 オペレーティングシステムのサポート - Windows Server、 Windows 10/11、MacOS、Linux (Debian、CentOSなど)
 PM2
 Node.jsエージェントのシステム要件
+Node.js LTS 22に対応しているNode.js エージェントのバージョンは、5.xのみとなります。
 NPMバージョン
 8.5.5以降
 
