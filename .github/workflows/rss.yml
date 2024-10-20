@@ -43,7 +43,8 @@ jobs:
             docker compose run python3 python python_rlsnote.py
             docker compose run python3 python ruby_rlsnote.py
             docker compose run python3 python php_rlsnote.py
-            docker compose run python3 python contrast_rlsnote.py
+            docker compose run python3 python contrast_rlsnote_saas.py
+            docker compose run python3 python contrast_rlsnote_eop.py
             docker compose run python3 python java_support_tech.py
             docker compose run python3 python dotnet_framework_support_tech.py
             docker compose run python3 python dotnet_core_support_tech.py
