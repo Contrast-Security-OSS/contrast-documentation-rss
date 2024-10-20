@@ -19,7 +19,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Login to Docker
         uses: docker/login-action@v3
         with:
@@ -64,11 +64,11 @@ jobs:
               git commit -m "Commit updated files" ./files/*.txt
               git push
             fi
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: rss_feeds
           path: feeds
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: feeds
   deploy:
@@ -81,6 +81,6 @@ jobs:
       pages: write
       id-token: write
     steps:
-      - uses: actions/deploy-pages@v1
+      - uses: actions/deploy-pages@v4
         id: deployment
 
