@@ -9,7 +9,7 @@ import html
 import hashlib
 
 def main():
-    url = 'https://docs.contrastsecurity.jp/ja/release.html'
+    url = 'https://docs.contrastsecurity.jp/ja/release-hosted.html'
     res = req.urlopen(url)
     soup = BeautifulSoup(res, 'lxml')
     elems = soup.select('section.section')
@@ -17,17 +17,17 @@ def main():
     #print(modified_date)
 
     feed = Rss201rev2Feed(
-        title='Contrast Release Note',
+        title='Contrast Release Note(SaaS)',
         link='https://contrastsecurity.dev/contrast-documentation-rss',
-        description='Contrast Release Note',
+        description='Contrast Release Note(SaaS)',
         language='ja',
         author_name="Contrast Security Japan G.K.",
-        feed_url='https://contrastsecurity.dev/contrast-documentation-rss/contrast_rlsnote.xml',
+        feed_url='https://contrastsecurity.dev/contrast-documentation-rss/contrast_rlsnote_saas.xml',
         feed_copyright='Copyright 2023 Contrast Security Japan G.K.'
     )
 
-    id_ptn = re.compile(r'^[0-9]{1,2}月-[0-9\-]+-$')
-    title_ptn = re.compile(r'^[0-9]{1,2}月\([0-9\.]+\)$')
+    id_ptn = re.compile(r'^20[0-9]{2}年[0-9]{1,2}月$')
+    title_ptn = re.compile(r'^20[0-9]{2}年[0-9]{1,2}月$')
 
     for elem in elems:
         try:
@@ -52,8 +52,8 @@ def main():
             #if not title.lower().startswith('java'):
             #    continue
             id_hash = hashlib.md5(id_str.encode()).hexdigest()
-            url = 'https://docs.contrastsecurity.jp/ja/release.html#%s' % id_str
-            guid = 'https://docs.contrastsecurity.jp/ja/release.html#%s' % id_hash
+            url = 'https://docs.contrastsecurity.jp/ja/release-hosted.html#%s' % id_str
+            guid = 'https://docs.contrastsecurity.jp/ja/release-hosted.html#%s' % id_hash
             if not '月' in title:
                 continue
             feed.add_item(title=title, link=url, description=''.join(['<p>{0}</p>'.format(s) for s in desc_buffer]), pubdate=pubdate, unique_id=guid)
@@ -61,7 +61,7 @@ def main():
             continue
     str_val = feed.writeString('utf-8')
     dom = xml.dom.minidom.parseString(str_val)
-    with open('/feeds/contrast_rlsnote.xml','w') as fp:
+    with open('/feeds/contrast_rlsnote_saas.xml','w') as fp:
         dom.writexml(fp, encoding='utf-8', newl='\n', indent='', addindent='    ')
 
 if __name__ == "__main__":
