@@ -84,6 +84,7 @@ OWASP ESAPI、AntiSamy、Coverity
 Quarkus RESTEasy
 Seam
 Spring、Spring Boot、Spring AOP
+ Spring Cloud
 Spring WebFlux 5および6
 Spring Web Services
 Struts、Struts 2
