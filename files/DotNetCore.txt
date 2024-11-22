@@ -7,6 +7,10 @@ ASP.NET Core(3.1.x、5.0.x、6.0.x、7.0.x、8.0.x)
 Model-View-Controller (MVC)
 Razor Pages
 Grpc.AspNetCore
+[en] Blazor (6.0.X, 7.0.X, 8.0X)
+[en] Blazor Server (Server-Side) only, Blazor WebAssembly is not supported
+ SignalR (6.0.X, 7.0.X, 8.0X)
+ Transport protocols: WebSockets, Server-Sent Events, and Long Polling
 限定サポート：
 ASP .NET Core 3.1.x、5.0.x
 サポート対象外：
@@ -15,8 +19,7 @@ ASP .NET Core 3.1.x、5.0.x
 Grpc.Core
 gRPCドキュメントのThe future of gRPC in C# belongs to grpc-dotnet(C#でのgRPCにgrpc-dotnetを推奨)に、詳細情報があります。
 ランタイム
-.NET Coreランタイム：3.1.x、5.0.x、6.0.x、7.0.x
-、 8.0.x
+.NET Coreランタイム：3.1.x、5.0.x、6.0.x、7.0.x 、 8.0.x、 9.0.x
 .NET Coreターゲットフレームワーク ：
 netcoreapp3.1
 net5.0
