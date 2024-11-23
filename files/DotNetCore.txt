@@ -7,10 +7,10 @@ ASP.NET Core(3.1.x、5.0.x、6.0.x、7.0.x、8.0.x)
 Model-View-Controller (MVC)
 Razor Pages
 Grpc.AspNetCore
-[en] Blazor (6.0.X, 7.0.X, 8.0X)
-[en] Blazor Server (Server-Side) only, Blazor WebAssembly is not supported
- SignalR (6.0.X, 7.0.X, 8.0X)
- Transport protocols: WebSockets, Server-Sent Events, and Long Polling
+Blazor(6.0.x、7.0.x、8.0.x)
+Blazor Server(サーバ側)のみで、Blazor WebAssemblyはサポートされません
+SignalR(6.0.x、7.0.x、8.0.x)
+トランスポートプロトコル：WebSocket、サーバ送信イベント(SSE)、ロングポーリング
 限定サポート：
 ASP .NET Core 3.1.x、5.0.x
 サポート対象外：
