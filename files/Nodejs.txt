@@ -13,8 +13,7 @@ Contrastは、「アクティブLTS」または「メンテナンスLTS」ステ
 Node.js LTSバージョンは、JavaScript ECMAScript5と6の機能をサポートします。
 TypeScriptがサポートされるのは、エージェントがアプリケーションのコンパイル済みエントリポイントを指すように設定されている場合のみです。
 システム
-Node.js LTSバージョン16、18、20
-、22
+Node.js LTSバージョン16、18、20 、22
 プロセッサのサポート - Apple M1/M2、Intel/AMD(AMD64)
 オペレーティングシステムのサポート - Windows Server、 Windows 10/11、MacOS、Linux (Debian、CentOSなど)
 PM2
@@ -32,7 +31,7 @@ Restify 8、9、10、11
 
 データベースドライバとオブジェクト関係マッピング(ORM)
 MarsDB 現在はメンテナンスされていないが、脆弱なJuiceShopアプリケーションには必要。
-Mongoose 6.x、7.x
+Mongoose 6.x、7.x、8.x
 MongoDB 2.2.36、3.3.0以降、4.x、5.x(データベースバージョン4.x、5.x、6.xに対応)
 MySQL2 2.0.0以降(MySQLデータベースバージョン5.6.51、5.7.x、8.0.xに対応)
 MSSQL 6.4.0以降
