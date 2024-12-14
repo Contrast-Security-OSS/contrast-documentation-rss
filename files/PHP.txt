@@ -9,7 +9,7 @@ NTS版のPHPのみをサポート。
 アプリケーションフレームワーク
 Laravel
 Symfony
-Drupal 8、9、10
+Drupal 8、9、10、11
 サーバ
 Apache
 その他、mod_phpやphp-fpmを使用しているサーバでも動作する可能性がありますが、現在はサポートされていません。

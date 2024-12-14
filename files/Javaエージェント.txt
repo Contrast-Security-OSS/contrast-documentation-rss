@@ -29,7 +29,7 @@ Tomcat 5、6、7、8、9 、10
 Vert.x 3.1.0 、4.x
 WebLogic 10、11g、12c、14
 WebSphere* 8.5、9.0
-WebSphere Liberty 22 、23
+WebSphere Liberty 22 、23、24
 WildFly 10、11、14、18、23-32
 * zSeriesおよびAIXの環境ではサポートが限定されます。SPARC SolarisでWebSphereを使用する場合、バージョン8.5.5.11が必須となります。
 ルートカバレッジのサポート：
@@ -81,10 +81,11 @@ Java EE/J2EE、Servlet/JSP
 Jersey
 MyBatis
 OWASP ESAPI、AntiSamy、Coverity
+PrimeFaces
 Quarkus RESTEasy
 Seam
 Spring、Spring Boot、Spring AOP
-[en] Spring Cloud
+Spring Cloud
 Spring WebFlux 5および6
 Spring Web Services
 Struts、Struts 2
