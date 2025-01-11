@@ -23,7 +23,7 @@ NPMバージョン
 8.5.5以降
 
 アプリケーションフレームワーク
-Express 4
+Express 4、5
 Fastify 3、4
 Hapi 19、20、21
 Koa 2.3以降
