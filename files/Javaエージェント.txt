@@ -4,7 +4,7 @@
 Javaランタイム
 IBM 8
 Oracle 8　*バージョン11以降はOpenJDKのサポートに従う
-OpenJDK 8、11、12、13、14、15、16、17、18、19、20、21
+OpenJDK 8、11、12、13、14、15、16、17、18、19、20、21、23
 OpenJDKのサポートは、ここに示す現在のサポート対象バージョンの範囲内で、全ての公開中のビルドで動作するように設計されています。一般的によく利用されるAzulやAmazon Correttoなどもサポート対象のJDKのカテゴリに入ります。
 サポート対象外：
 JDKプレビュー機能
@@ -23,6 +23,7 @@ JBoss EAP 6.xおよび7.x
 Jetty 7、8、9、10、11
 Karaf 3.0.x
 Netty 4.x
+Payara 5、6
 Play 2.4
 Resin 4
 Tomcat 5、6、7、8、9 、10
@@ -71,7 +72,7 @@ Glowroot*
 GSON、Kryo、minidev、org.json
 Google Web Toolkit (GWT)
 gRPC 1.4.x、1.5.x、1.6.x
-Hibernate
+Hibernate 6.2 - 6.4
 http4k(4.6.0.0と4.17、Contrast Assess対象)
 J2SE
 JDBC、JDBI、MongoDB
