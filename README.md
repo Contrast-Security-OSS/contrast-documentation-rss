@@ -1,1 +1,1 @@
-# RSSSample
+# contrast-documentation-rss
