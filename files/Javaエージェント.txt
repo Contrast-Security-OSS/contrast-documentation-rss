@@ -53,13 +53,14 @@ PostgreSQL
 SQL Server
 SQLite JDBCドライバ
 
-メッセージングサービス
+メッセージサービス
+Contrastは、Contrast Assessのみのメッセージサービスをサポートしています。
 JMS 2.0
 IBM MQ 9.x
 Spring JMS 2.x
 エージェントのバージョン：Java 4.7.0以降
 Contrastのバージョン：3.9.9以降
-Kafkaメッセージキュー・ストリーミング
+Kafkaストリーミング
 エージェントのバージョン： Java 5.0.0以降
 その他のJavaテクノロジ
 ADF JSF
