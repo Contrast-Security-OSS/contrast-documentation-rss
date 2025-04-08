@@ -54,7 +54,7 @@ SQL Server
 SQLite JDBCドライバ
 
 メッセージサービス
-Contrastは、Contrast Assessのみのメッセージサービスをサポートしています。
+Contrast Assessのみが以下のメッセージサービスをサポートしています。
 JMS 2.0
 IBM MQ 9.x
 Spring JMS 2.x
