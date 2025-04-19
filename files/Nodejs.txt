@@ -24,7 +24,7 @@ NPMバージョン
 
 アプリケーションフレームワーク
 Express 4、5
-Fastify 3、4
+Fastify 3、4、5
 Hapi 19、20、21
 Koa 2.3以降
 Restify 8、9、10、11
@@ -54,3 +54,4 @@ Express-session 1.15.6、1.16.0以降
 
 その他のテクノロジ
 HTTP/2
+GraphQL
