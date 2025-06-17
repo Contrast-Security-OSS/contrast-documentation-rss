@@ -55,6 +55,6 @@ Express-session 1.15.6、1.16.0以降
 その他のテクノロジ
 HTTP/2
 GraphQL
-graphql npm: graphql
-@apollo/server npm: @apollo/server
-graphql-yoga npm: graphql-yoga
+ graphql npm: graphql
+ @apollo/server npm: @apollo/server
+ graphql-yoga npm: graphql-yoga
