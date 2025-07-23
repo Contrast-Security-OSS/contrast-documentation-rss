@@ -52,16 +52,20 @@ Oracle
 PostgreSQL
 SQL Server
 SQLite JDBCドライバ
-
+オブザーバビリティのサポート：全てのデータベース
 メッセージサービス
-Contrast Assessのみが以下のメッセージサービスをサポートしています。
+Contrast Assessのみが次のメッセージサービスをサポートしています。
 JMS 2.0
 IBM MQ 9.x
 Spring JMS 2.x
 エージェントのバージョン：Java 4.7.0以降
 Contrastのバージョン：3.9.9以降
+サポート対象外：
+Contrast ProtectおよびADRのデータ
 Kafkaストリーミング
 エージェントのバージョン： Java 5.0.0以降
+サポート対象外：
+Contrast ProtectおよびADRのデータ
 その他のJavaテクノロジ
 ADF JSF
 Apache POI、Fileupload、HttpComponents
@@ -104,3 +108,6 @@ Spring Web MVC 4.2、5.3、6.0
 Spring WebFlux 5および6
 Spring Web Services
 Struts 2
+オブザーバビリティのサポート：
+Spring
+Spring WebFlux
