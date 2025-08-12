@@ -4,7 +4,7 @@
 Javaランタイム
 IBM 8
 Oracle 8　*バージョン11以降はOpenJDKのサポートに従う
-OpenJDK 8、11、12、13、14、15、16、17、18、19、20、21、23
+OpenJDK 8、11、12、13、14、15、16、17、18、19、20、21、23、24
 OpenJDKのサポートは、ここに示す現在のサポート対象バージョンの範囲内で、全ての公開中のビルドで動作するように設計されています。一般的によく利用されるAzulやAmazon Correttoなどもサポート対象のJDKのカテゴリに入ります。
 サポート対象外：
 JDKプレビュー機能
@@ -52,20 +52,16 @@ Oracle
 PostgreSQL
 SQL Server
 SQLite JDBCドライバ
-オブザーバビリティのサポート：全てのデータベース
+  
 メッセージサービス
-Contrast Assessのみが次のメッセージサービスをサポートしています。
+Contrast Assessのみが以下のメッセージサービスをサポートしています。
 JMS 2.0
 IBM MQ 9.x
 Spring JMS 2.x
 エージェントのバージョン：Java 4.7.0以降
 Contrastのバージョン：3.9.9以降
-サポート対象外：
-Contrast ProtectおよびADRのデータ
 Kafkaストリーミング
 エージェントのバージョン： Java 5.0.0以降
-サポート対象外：
-Contrast ProtectおよびADRのデータ
 その他のJavaテクノロジ
 ADF JSF
 Apache POI、Fileupload、HttpComponents
@@ -90,11 +86,11 @@ OWASP ESAPI、AntiSamy、Coverity
 PrimeFaces
 Quarkus RESTEasy
 Seam
-Spring、Spring Boot、Spring AOP
+Spring 3.2-3.5、Spring Boot、Spring AOP
 Spring Cloud
 Spring WebFlux 5および6
 Spring Web Services
-Struts、Struts 2
+Struts、Struts 2、Struts 7 compatibility with Assess
 Wicket
 XStream、Jackson (JSON/XML)
 Xerces、JAXB、nu.xom
@@ -108,6 +104,3 @@ Spring Web MVC 4.2、5.3、6.0
 Spring WebFlux 5および6
 Spring Web Services
 Struts 2
-オブザーバビリティのサポート：
-Spring
-Spring WebFlux
