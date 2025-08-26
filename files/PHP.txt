@@ -7,7 +7,7 @@
 エージェントは、mbstringおよびcurl拡張モジュールに依存します。
 NTS版のPHPのみをサポート。
 アプリケーションフレームワーク
-Laravel 6〜11
+Laravel 6〜12
 Symfony 5〜7
 Drupal 8〜11
 サーバ
