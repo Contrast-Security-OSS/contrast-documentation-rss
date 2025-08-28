@@ -13,7 +13,7 @@ Contrastは、「アクティブLTS」または「メンテナンスLTS」ステ
 Node.js LTSバージョンは、JavaScript ECMAScript5と6の機能をサポートします。
 TypeScriptがサポートされるのは、エージェントがアプリケーションのコンパイル済みエントリポイントを指すように設定されている場合のみです。
 システム
-Node.js LTSバージョン16、18、20 、22
+Node.js LTSバージョン18、20 、22、24
 プロセッサのサポート - Apple M1/M2、Intel/AMD(AMD64)
 オペレーティングシステムのサポート - Windows Server、 Windows 10/11、MacOS、Linux (Debian、CentOSなど)
 PM2
