@@ -42,8 +42,7 @@ Uvicorn 0.14.x - 0.23.x
 Mongo (pymongo)
 MySQL (PyMySQL、mysql-connector)
 PostgreSQL (psycopg2)
+[en] SQLAlchemy (dbapi2-compliant adapters)
 SQLite3 (sqlite3、pysqlite2)
-オブジェクト関係マッピングデータベース(ORM)
-Flask-SQLAlchemy
-SQLAlchemy
+[en] The Stored XSS Assess rule requires Django’s built-in ORM.
 リクエスト処理ロジックをアプリケーションの __main__モジュールに置くことは避けて下さい。Contrastで十分に観測できない可能性があります。最適なカバレッジを得るためには、アプリケーションを直接呼び出す(例：python app.pyやpython -m app)のではなく、 標準的なWebサーバ( サポート対象のWebサーバを参照)を使用してサーバを起動することをお勧めします。これは稀なケースですが、検出精度を最大限に高めるためには考慮すべき点です。
