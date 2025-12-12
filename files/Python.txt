@@ -39,6 +39,7 @@ Webサーバ
 Gunicorn 0.16.1 –21.2.x
 uWSGI 2.0.14 - 2.0.x
 Uvicorn 0.14.x - 0.23.x
+ The Python agent supports all versions.
 データベース
 Mongo (pymongo)
 MySQL (PyMySQL、mysql-connector)
