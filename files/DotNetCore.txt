@@ -58,5 +58,5 @@ Kestrel
 
 .NET Core 2.2は、.NET Coreエージェントのバージョン1.5.20以降ではサポートされません。.NET Core 2.2を使用している場合、アプリケーションの.NET Coreランタイムをアップグレードするまでは、.NET Coreエージェントのバージョン1.5.20以前のものを使用してください。
 NET Coreエージェントのバージョン1.9.9をもって、.NET Core 2.1のサポートを終了しました。.NET Core 2.1を使用している場合、アプリケーションの.NET Coreランタイムをアップグレードするまでは、.NET Coreエージェントのバージョン1.9.9以前のものを使用してください。
-Microsoftは、2022年5月10日をもって.NET 5.0のサポートを終了し、2022年12月13日をもって.NET Core 3.1のサポートを終了しました。.NET 5.0および.NET Core 3.1に関するContrastのサポートは、.NET Coreエージェントのバージョン3.0.0による限定的なサポートとなります。Contrastの限定サポートでは、サポート対象の言語バージョンで再現可能な問題のみを解決します。お使いのアプリケーションを.NETのサポート対象バージョンにアップグレードすることを強く推奨します。
+ As of .NET core agent version 4.8.0, Contrast no longer supports .NET Core 3.1, 5.0, and 7.0. If you are using .NET Core 3.1, 5.0, and 7.0, you'll need to use .NET Core agent version 4.8.0 or lower until you can upgrade your application’s .NET Core runtime.
 .NET Coreエージェントは、System.RuntimeおよびASPNET Coreを参照していないアプリケーションをサポートしません。また、エージェントが依存しているアセンブリをコンパイラがトリムする可能性があるため、エージェントはトリミングされた自己完結型のデプロイと実行可能ファイルもサポートしません。
