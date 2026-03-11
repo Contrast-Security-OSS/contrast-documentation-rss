@@ -19,7 +19,7 @@ FAQ：Java6およびJava7のサポート終了について
 アプリケーションサーバ
 GlassFish 4、5、6
 Grizzly 2.3.20以降
-JBoss EAP 6.xおよび7.x
+JBoss EAP 6.x、7.x 、8.0
 Jetty 7、8、9、10、11
 Karaf 3.0.x
 Netty 4.x
@@ -31,16 +31,17 @@ Vert.x 3.1.0 、4.x
 WebLogic 10、11g、12c、14
 WebSphere* 8.5、9.0
 WebSphere Liberty 22 、23、24、25、26
-WildFly 10、11、14、18、23-32
+WildFly 8.x-33.x
 * zSeriesおよびAIXの環境ではサポートが限定されます。SPARC SolarisでWebSphereを使用する場合、バージョン8.5.5.11が必須となります。
 ルートカバレッジのサポート：
-GlassFish 4、5、6
-Jetty 11.0、10.0、9.4、8.1、7.6
-Resin 4.0
-Tomcat 5、6、7、8、9、10
-WebLogic 12、14
-WebSphere 8.5、9.0
-WildFly 10、11、14、18、23-32
+GlassFish
+JBoss EAP
+Jetty
+Resin
+Tomcat
+WebLogic
+WebSphere
+WildFly
 オプティマイザ
 Proguard
 ProguardにあるJavaバイトコードの最適化機能は、Contrastのようなランタイムエージェントが基本前提とする動きに反します。Proguardユーザが、Contrastを利用してアプリケーションを保護する場合は、Proguardの-dontoptimize設定オプションを使用して最適化を行わないようにする必要があります。
@@ -52,7 +53,6 @@ Oracle
 PostgreSQL
 SQL Server
 SQLite JDBCドライバ
-[en]
 メッセージサービス
 Contrast Assessのみが以下のメッセージサービスをサポートしています。
 JMS 2.0
