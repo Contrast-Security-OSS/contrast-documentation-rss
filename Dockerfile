@@ -1,4 +1,4 @@
-FROM python:3.9.18
+FROM python:3.9.18@sha256:e730f8ac1ff165f22c88b5fc9d3e53668ee3e80ea1aefe06c7f06f69da14e83d
 USER root
 
 RUN apt-get update
