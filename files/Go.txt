@@ -38,10 +38,12 @@ github.com/go-chi/chi/v5
 github.com/julienschmidt/httprouter
 github.com/gin-gonic/gin v1以降
 github.com/go-openapi/swag
- github.com/labstack/echo
+ github.com/labstack/echo/v4
+ github.com/labstack/echo/v5
 フレームワークの基礎となるHTTP実装がサポートされている限り、この一覧にないフレームワークでもエージェントは動作します。ただし、一部の機能が使用できなくなるか、精度が低くなる可能性があります。
 例えば、認識できないルータに登録されたルートを、エージェントが正しく検出しない可能性があります。
 ご利用のフレームワークがサポート対象のフレームワークの一覧にない場合やサポートが必要な場合は、Contrastサポートにお問い合わせください。
 データベースのサポート
 database/sql
+ https://pkg.go.dev/github.com/labstack/echo/v4
 エージェントは、データベースドライバとして登録されたデータベースをサポートするために、標準ライブラリのdatabase/sqlパッケージに組み込むことができます。SQLDriversの例を参照ください。
