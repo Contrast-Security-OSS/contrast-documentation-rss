@@ -27,7 +27,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout code
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Login to Docker
         uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
         with:
@@ -72,11 +72,11 @@ jobs:
               git commit -m "Commit updated files" ./files/*.txt
               git push
             fi
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: rss_feeds
           path: feeds
-      - uses: Contrast-Security-OSS/upload-pages-artifact@24d45ff20bb020d94ec2d54d80dc54920f42eff8
+      - uses: Contrast-Security-OSS/upload-pages-artifact@50f77b75a906dcc7861cc93b13db1d951c6e7d55
         with:
           path: feeds
   deploy:
@@ -94,6 +94,6 @@ jobs:
         with:
           egress-policy: audit
 
-      - uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
+      - uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
         id: deployment
 
